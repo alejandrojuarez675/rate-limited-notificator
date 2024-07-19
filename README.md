@@ -30,6 +30,7 @@ Because the domain, gateway, and repository packages lack logic, I don't test th
 Since this project uses Maven, you can run it in the terminal:
 
 ```
+$ cd app
 $ mvn test
 ```
 
