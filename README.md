@@ -14,15 +14,23 @@ Some sample notification types and rate limit rules, e.g.:
 ## Solution
 ### Description
 
-I develop an interface 'NotificationService' that allow you to use the two productive implementations:
+I create the 'NotificationService' interface, which lets you utilize the two effective implementations:
 - NotificatorServiceImpl
 - RateLimitedNotificationServiceImpl
 
-The first allow you to use the functionality without limitations and the second have a configuration that control the quantity of notification per user in certain time.
+The first gives you unrestricted access to the capability, while the second has a setting that lets you manage how many notifications each user receives within a given window of time.
 
-I try to don't use any framework to do easily the reading and knowledge of code, so for example, I have to develop mocks for tests.
+I make an effort not to utilize any frameworks that make code reading and knowing easier; as an example, I have to create test mocks.
 
 ### How to run
-There is not a main java function to test it, but have test to apply the main logic, and you can read it to know how to use the class.
+You can read the test to learn how to use the class even though there isn't a main Java function to test it. It applies the primary logic.
 
-I don't do any test on domain, gateway and repository package due to they don't have any logic. So you only have tests on service package
+Because the domain, gateway, and repository packages lack logic, I don't test them. You therefore just have service package tests.
+
+Since this project uses Maven, you can run it in the terminal:
+
+```
+$ mvn test
+```
+
+Alternately, you could just run the test in an IDE like Intellij.
