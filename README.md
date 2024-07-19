@@ -15,7 +15,7 @@ Some sample notification types and rate limit rules, e.g.:
 ### Description
 
 I create the 'NotificationService' interface, which lets you utilize the two effective implementations:
-- NotificatorServiceImpl
+- NotificationServiceImpl
 - RateLimitedNotificationServiceImpl
 
 The first gives you unrestricted access to the capability, while the second has a setting that lets you manage how many notifications each user receives within a given window of time.
